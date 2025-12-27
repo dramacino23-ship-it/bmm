@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berkah Mesin Madiun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Berkah Mesin Madiun</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#produk">Produk</a>
+    <a href="#galeri">Galeri</a>
+	<a href="#artikel">Artikel</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>Jasa Pembuatan Mesin UMKM & Pertanian</h1>
+  <p>Solusi mesin custom berkualitas untuk usaha Anda</p>
+</section>
+
+<!-- PRODUK UNGGULAN -->
+<section id="produk" class="section">
+  <h2>Produk Unggulan</h2>
+  <div class="product-grid" id="homeProducts"></div>
+</section>
+
+<!-- GALERI PRODUK -->
+<section id="galeri" class="section gray">
+  <h2>Galeri Produk</h2>
+  <div class="product-grid" id="galleryProducts"></div>
+</section>
+
+<section id="artikel" class="section gray">
+  <h2>Artikel Seputar Mesin</h2>
+
+  <div class="article-grid" id="articleList"></div>
+</section>
+<footer id="kontak">
+</footer>
+
+<!-- MODAL ARTIKEL -->
+<div id="articleModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeArticle()">×</span>
+
+    <div class="modal-img-frame">
+      <img id="articleImg" alt="">
+    </div>
+
+    <h3 id="articleTitle"></h3>
+    <p id="articleContent"></p>
+  </div>
+</div>
+
+
+
+<!-- MODAL DETAIL -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+
+    <div class="modal-img-frame">
+      <img id="modalImg" alt="">
+    </div>
+
+    <div class="modal-info">
+      <h3 id="modalName"></h3>
+      <p id="modalDesc"></p>
+      <ul id="modalSpec"></ul>
+      <h4 id="modalPrice"></h4>
+
+      <a id="waBtn" class="wa-button" href="#" target="_blank">
+        💬 Pesan via WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="kontak">
+  <div class="footer-grid">
+    <div>
+      <h3>Berkah Mesin Madiun</h3>
+      <p>Spesialis pembuatan mesin UMKM & pertanian</p>
+    </div>
+    <div>
+      <h4>Kontak</h4>
+      <p>📞 081816307852</p>
+      <p>📧 berkahmesinmadiun@gmail.com</p>
+    </div>
+    <div>
+      <h4>Lokasi</h4>
+      <p>Madiun, Jawa Timur</p>
+    </div>
+  </div>
+  <p class="copyright">
+    &copy; <span id="year"></span> Berkah Mesin Madiun
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
